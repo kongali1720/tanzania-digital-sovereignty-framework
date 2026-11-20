@@ -1,0 +1,15 @@
+{
+  "name": "kongali1720-sovereignty-gateway",
+  "version": "1.1.0",
+  "description": "Kongali1720 Sovereign Integration Gateway with ISO 20022 XML Validation and Proof Anchoring",
+  "main": "kongali1720-sovereignty-gateway.js",
+  "scripts": {
+    "start": "node kongali1720-sovereignty-gateway.js"
+  },
+  "dependencies": {
+    "express": "^4.21.1"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

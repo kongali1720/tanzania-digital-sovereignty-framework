@@ -1,0 +1,29 @@
+services:
+  kongali1720-gateway:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: kongali1720-sovereignty-gateway
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "8443:8443"
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=64m
+    security_opt:
+      - no-new-privileges:true
+    deploy:
+      resources:
+        limits:
+          cpus: "1.0"
+          memory: "512M"
+        reservations:
+          cpus: "0.25"
+          memory: "128M"
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "20m"
+        max-file: "5"
