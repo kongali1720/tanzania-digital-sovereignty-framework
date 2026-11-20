@@ -640,6 +640,7 @@ This repository includes the following governance, contribution, and project doc
 | [CHANGELOG.md](CHANGELOG.md) | Project change history |
 | [CITATION.cff](CITATION.cff) | Citation metadata |
 | [docs/wiki/Technical-Architecture-Diagrams.md](docs/wiki/Technical-Architecture-Diagrams.md) | DPI, permissioned blockchain, Zero Trust, and integration diagrams |
+| [docs/wiki/Detailed-Technical-Specifications.md](docs/wiki/Detailed-Technical-Specifications.md) | API, PKI, validator node, and interoperability specifications |
 
 ---
 
