@@ -1,6 +1,6 @@
 # Technical Architecture Diagrams
 
-> **Status:** Proposed Reference Architecture (Draft for Institutional Review)  
+> **Status:** Proposed Reference Architecture (Draft for Institutional Review)
 > **Scope:** Digital Public Infrastructure (DPI), Permissioned Blockchain, Zero Trust Security, and System Integration for the Tanzania Digital Sovereignty Framework.
 
 ---
