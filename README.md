@@ -327,7 +327,7 @@ Consensus and governance:
 
 - API Gateway.
 - Enterprise Service Bus.
-- Immutabervice accounts.
+- Immutable audit logs and verification services.
 
 **Micro-Segmentation**
 
@@ -336,6 +336,15 @@ Isolate databases, ledger validator nodes, API gateways, and citizen portals int
 **Encryption Everywhere**
 
 Use TLS 1.3 in transit and strong AES/HSM-backed key management at rest, with strict key rotation policies.
+
+### 8.1 Zero-Trust Security Controls
+
+**Never Trust, Always Verify**
+
+- Strong identity verification and MFA for all users and services.
+- Network micro-segmentation between databases, ledger nodes, API gateways, and citizen portals.
+- Least-privilege access controls with RBAC and ABAC.
+- Continuous device and session verification.
 
 ### 8.2 National SOC and Incident Response
 
@@ -576,7 +585,7 @@ The long-term strategic objectives are:
 
 1. Strengthen Tanzania's digital sovereignty.
 2. Improve government service interoperability.
-3. Reduce document forgery and administrative tructure.
+3. Reduce document forgery and administrative fraud.
 
 By combining Digital Public Infrastructure, permissioned blockchain, Zero-Trust cybersecurity, cryptographic verification, and bilateral technology collaboration, the framework seeks to support a more transparent, resilient, and digitally sovereign Tanzania.
 
@@ -584,7 +593,7 @@ Its success depends on government leadership, institutional participation, regul
 
 ---
 
-## 16. Disclaimer
+## 15. Disclaimer
 
 This repository provides a strategic and technical reference framework for policy discussion, architecture planning, research, and potential commercial partnership structuring.
 
@@ -594,7 +603,7 @@ All proposed systems, partnerships, budgets, implementation specifications, and 
 
 ---
 
-## 17. Project Support
+## 16. Project Support
 
 If this project has helped your research, learning, technology development, or cybersecurity work, consider supporting its continued development.
 
