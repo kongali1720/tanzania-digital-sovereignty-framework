@@ -1,6 +1,6 @@
 # Executive Summary: National Digital Sovereignty, Blockchain & Cybersecurity Proposal
 
-**Target Stakeholders:** Office of the President of the United Republic of Tanzania, Ministry of Information, Communication and Information Technology, and Bank of Tanzania  
+**Target Stakeholders:** Office of the President of the United Republic of Tanzania, Ministry of Information, Communication and Information Technology, and Bank of Tanzania
 **Scope:** Sovereign Digital Public Infrastructure (DPI), Permissioned Blockchain, Zero-Trust Cybersecurity, and Bilateral IT Partnership
 
 ## 1. Strategic Context
