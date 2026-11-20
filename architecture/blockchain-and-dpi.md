@@ -1,21 +1,109 @@
-# Blockchain & Digital Public Infrastructure (DPI) Architecture
+# Blockchain & DPI Architecture
 
-## 1. Design Principles
-* **Permissioned Over Public-Speculative:** Use consortium or permissioned distributed ledgers where validator nodes are governed by authorized state institutions, regulators, and vetted partners.
-* **Interoperability First:** Connect registries (identity, tax, business registration, land, customs) via standardized APIs and event queues rather than isolated silos.
-* **Off-Chain Privacy, On-Chain Proof:** Store sensitive personal or commercial payloads in encrypted off-chain databases while anchoring cryptographic hashes, state transitions, and audit proofs on the ledger.
+## 1. Blockchain + DPI Integration Flow
 
-## 2. High-Value Government Use Cases
+```mermaid
+flowchart LR
+    subgraph Channels["Service Channels"]
+        C1[Citizen Portal]
+        C2[Agency Systems]
+        C3[Mobile App]
+    end
+    subgraph DPI["DPI Layer"]
+        ID[Digital Identity]
+        GW[API Gateway]
+        DOC[Document Verification]
+        REG[Registry Services]
+    end
+    subgraph BC["Permissioned Blockchain"]
+        SC[Smart Contracts]
+        VAL[Validator Nodes]
+        LEDGER[(Immutable Ledger)]
+    end
+    subgraph Sec["Zero Trust"]
+        IAM[IAM]
+        SIEM[SIEM / Monitoring]
+    end
+    C1 & C2 & C3 --> GW
+    GW --> ID
+    GW --> DOC
+    GW --> REG
+    GW --> SC
+    SC --> VAL
+    VAL --> LEDGER
+    ID -.auth.-> GW
+    GW --> IAM
+    GW --> SIEM
+    LEDGER -.audit trail.-> SIEM
+```
 
-| Domain | Core Problem | Blockchain & DPI Mechanism | Expected State Outcome |
-| :--- | :--- | :--- | :--- |
-| **Land Administration** | Disputed boundaries, forged titles, slow transfers | Permissioned ledger recording title issuance, encumbrances, and transfers linked to verified identity | Higher tenure security, reduced disputes, stronger collateral usability |
-| **Mining & Export Traceability** | Illicit mineral movement and export origin gaps | Cryptographic batch tracking from mine/farm/cooperative to weighing, assaying, and customs export | Improved royalty/tax compliance and verifiable origin for global buyers |
-| **Public Procurement** | Manual contract tracking and delayed audit trails | Tamper-evident milestone, bid, and disbursement logs with automated rule checks | Stronger fiscal transparency and audit readiness |
-| **Verifiable Credentials** | Manual degree, license, and permit verification | Cryptographically signed digital credentials and QR verification endpoints | Faster hiring, licensing, and cross-border verification |
-| **Cross-Border Settlement** | High friction and cost in regional trade and remittances | Supervised regulatory sandbox testing regulated settlement rails and tokenized trade instruments | Lower cross-border transaction friction under central bank oversight |
+## 2. Trust Boundary + Data Flow
 
-## 3. Reference Stack (Conceptual)
-* **Identity & Access Layer:** National ID integration, OIDC/OAuth2, role-based & attribute-based access control (RBAC/ABAC), hardware security modules (HSM).
-* **Ledger Layer:** Permissioned DLT framework (e.g., Hyperledger Besu / Fabric or Quorum-class enterprise nodes) with BFT consensus and strict node governance.
-* **Integration & Audit Layer:** API Gateway / Enterprise Service Bus, immutable audit log indexer, and read-only regulator/auditor observer nodes.
+```mermaid
+flowchart TB
+    subgraph Untrusted["Untrusted Zone"]
+        U[User / Device]
+    end
+    subgraph Edge["Policy Enforcement"]
+        PEP[API Gateway / PEP]
+        PDP[Policy Decision Point]
+    end
+    subgraph Trusted["Trusted Zone (DPI + Blockchain)"]
+        IDP[Identity Provider]
+        DPIAPP[DPI Services]
+        CHAIN[Permissioned Blockchain]
+        DATA[(Encrypted Data Store)]
+    end
+    U -->|mTLS + Token| PEP
+    PEP <--> PDP
+    PDP --> IDP
+    PEP --> DPIAPP
+    DPIAPP --> CHAIN
+    DPIAPP --> DATA
+    CHAIN -.immutable audit.-> DATA
+```
+
+## 3. Blockchain Topology (Consortium)
+
+```mermaid
+flowchart TB
+    subgraph Gov["Government Consortium"]
+        M1[Ministry Node]
+        M2[Regulator Node]
+        M3[Observer / University Node]
+    end
+    subgraph Orderers["Ordering Service"]
+        O1[Orderer 1]
+        O2[Orderer 2]
+        O3[Orderer 3]
+    end
+    subgraph Peers["Validator Peers"]
+        P1[Peer A]
+        P2[Peer B]
+        P3[Peer C]
+    end
+    LEDGER[(Shared Ledger)]
+    M1 & M2 & M3 --> O1 & O2 & O3
+    O1 & O2 & O3 --> P1 & P2 & P3
+    P1 & P2 & P3 --> LEDGER
+```
+
+## 4. DPI Component Map
+
+```mermaid
+flowchart LR
+    subgraph DPI["Digital Public Infrastructure"]
+        ID[Identity]
+        AUTH[Authentication]
+        EX[Data Exchange]
+        DOC[Document Verification]
+        REG[Registries]
+        PAY[Payment Rail]
+    end
+    ID --> AUTH
+    AUTH --> EX
+    EX --> DOC
+    EX --> REG
+    EX --> PAY
+    DOC & REG & PAY -.audit.-> LEDGER[(Blockchain Ledger)]
+```
