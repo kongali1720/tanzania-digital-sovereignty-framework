@@ -642,6 +642,7 @@ This repository includes the following governance, contribution, and project doc
 | [docs/wiki/Technical-Architecture-Diagrams.md](docs/wiki/Technical-Architecture-Diagrams.md) | DPI, permissioned blockchain, Zero Trust, and integration diagrams |
 | [docs/wiki/Detailed-Technical-Specifications.md](docs/wiki/Detailed-Technical-Specifications.md) | API, PKI, validator node, and interoperability specifications |
 | [docs/wiki/Risk-Management-Framework.md](docs/wiki/Risk-Management-Framework.md) | Technical, operational, regulatory, and governance risk framework |
+| [docs/wiki/Business-and-Investment-Framework.md](docs/wiki/Business-and-Investment-Framework.md) | Financing models, PPP/BOT structures, and economic sustainability framework |
 
 ---
 
