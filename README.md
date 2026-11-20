@@ -644,6 +644,8 @@ This repository includes the following governance, contribution, and project doc
 | [docs/wiki/Risk-Management-Framework.md](docs/wiki/Risk-Management-Framework.md) | Technical, operational, regulatory, and governance risk framework |
 | [docs/wiki/Business-and-Investment-Framework.md](docs/wiki/Business-and-Investment-Framework.md) | Financing models, PPP/BOT structures, and economic sustainability framework |
 | [docs/wiki/Research-and-References.md](docs/wiki/Research-and-References.md) | Standards, DPI principles, comparative research areas, and citation rules |
+| [docs/wiki/Wiki-Index.md](docs/wiki/Wiki-Index.md) | Central index linking the five institutional Wiki documents |
+| [docs/wiki/_Sidebar.md](docs/wiki/_Sidebar.md) | Wiki sidebar navigation structure |
 
 ---
 
