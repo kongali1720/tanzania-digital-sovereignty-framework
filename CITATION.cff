@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use this framework in research or other work, please cite the repository."
+title: "Tanzania Digital Sovereignty Framework"
+type: software
+version: "1.0.0"
+date-released: "2026-11-20"
+repository-code: "https://github.com/kongali1720/tanzania-digital-sovereignty-framework"
+license: MIT
+abstract: "A strategic policy, enterprise IT, permissioned blockchain, and Zero-Trust cybersecurity framework for digital sovereignty and digital public infrastructure in Tanzania."

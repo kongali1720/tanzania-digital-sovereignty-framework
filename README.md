@@ -611,3 +611,38 @@ Contributions, technical discussions, research collaboration, and constructive f
 *Strategic Blueprint — Policy and Technical Reference*
 
 </div>
+
+---
+
+<!-- PROJECT-DOCUMENTATION-INDEX -->
+
+## 📚 Project Documentation
+
+This repository includes the following governance, contribution, and project documentation:
+
+| Document | Description |
+|---|---|
+| [LICENSE](LICENSE) | MIT License and usage terms |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Contribution guidelines |
+| [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) | Community standards |
+| [SECURITY.md](SECURITY.md) | Security vulnerability reporting |
+| [GOVERNANCE.md](GOVERNANCE.md) | Project governance |
+| [SUPPORT.md](SUPPORT.md) | Support and engagement |
+| [CHANGELOG.md](CHANGELOG.md) | Project change history |
+| [CITATION.cff](CITATION.cff) | Citation metadata |
+
+---
+
+## ☕ Support the Project
+
+If this project has helped your research, learning, or security operations, consider supporting its continued development.
+
+<div align="center">
+
+<a href="https://www.paypal.com/paypalme/bungtempong99">
+<img src="https://img.shields.io/badge/☕-Support_Development-FFDD00?style=for-the-badge&logo=buymeacoffee&logoColor=000000">
+</a>
+
+</div>
+
+---
