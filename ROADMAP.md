@@ -195,3 +195,16 @@ All proposed partnerships, pilot projects, budgets, and implementation activitie
 **Roadmap Period:** 2026–2028  
 **Current Public Release:** v1.0.0  
 **Next Planned Milestone:** v1.1.0
+
+---
+
+## Milestone Status Update (Q4 2026 — v1.1.0)
+
+| Milestone | Target Window | Status | Key Artifact |
+| :--- | :--- | :--- | :--- |
+| **Strategic Policy & DPI Blueprint (`v1.0.0`)** | Q4 2026 | ✅ Completed | `README.md`, `architecture/`, `security/`, `partnerships/` |
+| **Kongali1720 Interoperability Gateway & ISO 20022 Validator (`v1.1.0`)** | Q4 2026 | ✅ Completed | `gateway/kongali1720-sovereignty-gateway.js`, `gateway/iso20022-validator.js` |
+| **Hardened Container & SOC Telemetry Baseline** | Q4 2026 | ✅ Completed | `gateway/Dockerfile`, `gateway/docker-compose.yml` |
+| **Permissioned DLT Smart Contract Proof Registry (Besu/Fabric PoC)** | Q1 2027 | 🔄 Planned | `contracts/` (On-chain hash anchoring & audit verification) |
+| **OpenAPI 3.0 Spec & NIDA / Sandbox Mock Adapter** | Q2 2027 | 🔄 Planned | `specs/` (Standardized government service bus contracts) |
+| **Scoped Bilateral Pilot & Local Engineering Lab Handover** | Q3–Q4 2027 | 🔄 Planned | Pilot KPI evaluation & Tanzanian engineering onboarding |
